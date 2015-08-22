@@ -7,8 +7,8 @@ var server = net.createServer(function(socket) { //'connection' listener
     console.log('client disconnected');
   });
 
-  socket.write('hello, old friend.\r\n');
-  socket.pipe(socket);
+  // socket.write('hello, old friend.\r\n');
+  // socket.pipe(socket);
 
   socket.on('data', function(connection) {
     console.log(connection.toString());
